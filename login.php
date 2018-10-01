@@ -4,13 +4,13 @@
 add_action('init', function() {
     if (!isset($_COOKIE['cod_token'])) {
 	$arr_var = [
-    		'client' => 'canonacademy',
-    		'password' => '%6&FE3D#fiTR&@96'
+    		'client' => '',
+    		'password' => ''
     	];
     	$arr_json = json_encode($arr_var);
 
     	$ini = curl_init();
-    	$url = 'https://miportalcanon.com.mx/cliente-unico-api/login';
+    	$url = '';
     	curl_setopt($ini, CURLOPT_URL, $url);
     	curl_setopt($ini, CURLOPT_POST, TRUE);
     	curl_setopt($ini, CURLOPT_POSTFIELDS, $arr_json); 
